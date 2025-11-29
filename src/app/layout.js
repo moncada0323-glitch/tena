@@ -20,9 +20,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" suppressHydrationWarning={true}>
+    <html lang="es" suppressHydrationWarning>
       <head>
-        <script src="/register-sw.js" />
+        <script src="/register-sw.js"></script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
